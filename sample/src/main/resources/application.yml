@@ -1,0 +1,37 @@
+#server.port=8030
+#spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+#spring.datasource.url=jdbc:mariadb://127.0.0.1:3306/test
+#spring.datasource.username=ncddb
+#spring.datasource.password=ncddb
+
+server.port : 8030 
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+restTemplate:
+  factory:
+    readTimeout: 5000 
+    connectTimeout: 3000
+  httpClient:
+    maxConnTotal: 100
+    maxConnPerRoute: 5 
+    
+logging:
+  path: d:/02.Dev/SpringBootDev/logs  
+  file: log-file  
+  
+---
+spring:
+  profiles: log-windows
+  
+logging:
+  path: d:/02.Dev/SpringBootDev/logs 
+---
+spring:
+  profiles: log-linux
+  
+logging:
+  path: /logs
+
+
+
