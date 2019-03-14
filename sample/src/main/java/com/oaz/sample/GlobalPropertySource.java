@@ -7,8 +7,10 @@ import org.springframework.context.annotation.PropertySources;
 
 @Configuration
 @PropertySources({
-    @PropertySource( value = "file:D:/02.Dev/SpringBootDev/workspace/sample/src/main/resources/properties/db.properties", ignoreResourceNotFound = true ),
+	@PropertySource( value = "classpath:/properties/db.properties", ignoreResourceNotFound = true),
+	@PropertySource( value = "file:D:/00.Git_Repository/SpringBootSample/sample/src/main/resources/properties/db.properties", ignoreResourceNotFound = true ),
     @PropertySource( value = "file:${user.home}/env/db.properties", ignoreResourceNotFound = true)
+    
 })
 
 
