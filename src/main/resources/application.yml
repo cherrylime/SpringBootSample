@@ -17,7 +17,7 @@ restTemplate:
     maxConnPerRoute: 5 
     
 logging:
-  path: /logs  
+  path: d:/02.Dev/SpringBootDev/logs   
   file: log-file  
   
 ---
