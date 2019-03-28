@@ -1,13 +1,8 @@
-sudo: false
 language: java
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 before_install:
   - chmod +x mvnw
     
 script: ./mvnw clean install
-
-cache:
-  directories:
-    - $HOME/.m2
