@@ -17,7 +17,7 @@ restTemplate:
     maxConnPerRoute: 5 
     
 logging:
-  path: /home/cherrylime/applications/SpringSample/logs  
+  path: /logs  
   file: log-file  
   
 ---
@@ -31,7 +31,7 @@ spring:
   profiles: log-linux
   
 logging:
-  path: /home/cherrylime/applications/SpringSample/logs
+  path: /logs
 ---
 spring.profiles: logging-daily
 logging:
