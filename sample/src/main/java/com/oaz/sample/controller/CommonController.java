@@ -12,7 +12,7 @@ public class CommonController {
  
     @RequestMapping("/sample")
     public String demo_test() throws Exception{
-        return "Sample(/sample)";
+        return "Sample(/sample222222222222222222)";
     }
  
 }
