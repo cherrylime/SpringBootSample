@@ -29,3 +29,18 @@ deploy:
     on:
       repo: cherrylime/SpringBootSample
       branch: master    
+      
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: oaz-web-deploy
+    key: SpringSample-0.0.1-SNAPSHOT.jar
+    bundle_type: jar
+    application: oszSample
+    deployment_group: oaz-web-group
+    region: ap-northeast-2
+    wait-until-deployed: true
+    on:
+      repo: cherrylime/SpringBootSample
+      branch: master      
+      
