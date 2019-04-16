@@ -18,7 +18,7 @@ before_deploy:
   - zip oaz *.jar
   - cd ../
   - mkdir -p deploy
-  - mv oaz.zip ./deploy
+  - mv ./target/oaz.zip ./deploy
 
 deploy:
   - provider: s3
