@@ -38,8 +38,5 @@ deploy:
     application: oszSample
     deployment_group: oaz-web-group
     region: ap-northeast-2
-    wait-until-deployed: true
-    on:
-      repo: cherrylime/SpringBootSample
-      branch: master      
+    wait-until-deployed: true       
       
