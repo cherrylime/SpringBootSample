@@ -4,3 +4,8 @@ files:
   - source:  /
     destination: /home/cherrylime/applications/SpringSample
     overwrite: yes
+    
+hooks:
+  AfterInstall: 
+    - location: execute-deploy.sh
+      timeout: 180    
