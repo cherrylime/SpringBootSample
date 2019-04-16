@@ -3,3 +3,4 @@ os: linux
 files:
   - source:  /
     destination: /home/cherrylime/applications/SpringSample
+    overwrite: yes
