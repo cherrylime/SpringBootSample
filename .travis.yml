@@ -4,6 +4,9 @@ jdk:
 
 before_install:
   - chmod +x mvnw
+  
+before_deploy:  
+  - mkdir -p deploy
     
 script: ./mvnw clean install
 
@@ -19,6 +22,7 @@ deploy:
     region: ap-northeast-2
     skip_cleanup: true
     acl: public_read
+    local_dir: deploy
     wait-until-deployed: true
     on:
       repo: cherrylime/SpringBootSample
