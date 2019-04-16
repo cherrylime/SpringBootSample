@@ -14,11 +14,12 @@ cache:
 
 # Travis CI & S3 연동
 before_deploy:
-  - pwd > 11.txt
-#  - zip -r oaz  /home/travis/build/cherrylime/SpringBootSample/target/*.jar
-  - zip oaz 11.txt
+  
+  - cd /home/travis/build/cherrylime/SpringBootSample/target
+  - zip oaz *.jar
   - mkdir -p deploy
-  - mv oaz.zip ./deploy  
+  - mv oaz.zip ./deploy
+  - cd /home/travis/build/cherrylime/SpringBootSample  
 
 deploy:
   - provider: s3
