@@ -15,8 +15,9 @@ cache:
 # Travis CI & S3 연동
 before_deploy:
   - cp *.yml ./target
+  - cp *.sh ./target
   - cd ./target
-  - zip oaz *.jar *.yml
+  - zip oaz *.jar *.yml *.sh
   - cd ../
   - mkdir -p deploy
   - mv ./target/oaz.zip ./deploy
