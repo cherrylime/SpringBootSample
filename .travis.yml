@@ -21,6 +21,7 @@ deploy:
     skip_cleanup: true
     acl: public_read
     wait-until-deployed: true
+    local: /home/travis/build/cherrylime/SpringBootSample/target/*.jar
     on:
       repo: cherrylime/SpringBootSample
       branch: master    
