@@ -41,7 +41,7 @@ deploy:
     bucket: oaz-web-deploy
     bundle_type: zip
     key: oaz.zip
-    application: oszSample
+    application: oaz-web
     deployment_group: oaz-web-group
     region: ap-northeast-2
     wait-until-deployed: true    
