@@ -7,6 +7,6 @@ files:
     
 hooks:
   AfterInstall: 
-    - location: execute-deploy.sh
+    - location: deploy.sh
       timeout: 180    
       runas: root
